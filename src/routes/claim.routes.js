@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { claimBox } from "../services/claim.service";
-import { claimLimiter } from "../utils/rateLimiter";
+import { claimBox } from "../services/claim.service.js";
+import { claimLimiter } from "../utils/rateLimiter.js";
 
 export const claimRouter = Router();
 

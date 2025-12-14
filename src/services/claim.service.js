@@ -1,6 +1,6 @@
-import { Box } from "../models/Box";
-import { hashSecret } from "../utils/hashSecret";
-import { signMint } from "./signer.service";
+import { Box } from "../models/Box.js";
+import { hashSecret } from "../utils/hashSecret.js";
+import { signMint } from "./signer.service.js";
 
 export async function claimBox(boxNo, words, user) {
   const box = await Box.findOne({ boxNo });

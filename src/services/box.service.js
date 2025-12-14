@@ -1,6 +1,6 @@
-import { Box } from "../models/Box";
-import { generateSecret } from "../utils/generateSecret";
-import { hashSecret } from "../utils/hashSecret";
+import { Box } from "../models/Box.js";
+import { generateSecret } from "../utils/generateSecret.js";
+import { hashSecret } from "../utils/hashSecret.js";
 
 export async function registerBox(boxNo, version, imageUrl) {
   const words = generateSecret();

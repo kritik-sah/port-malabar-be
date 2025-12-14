@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { registerBox } from "../services/box.service";
+import { registerBox } from "../services/box.service.js";
 
 export const boxRouter = Router();
 
